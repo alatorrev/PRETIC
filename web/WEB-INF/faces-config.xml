@@ -17,5 +17,12 @@
             <renderer-class>org.primefaces.ultima.component.menu.UltimaMenuRenderer</renderer-class>
         </renderer>
     </render-kit>
+    <navigation-rule>
+        <from-view-id>/login.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>dashboard</from-outcome>
+            <to-view-id>/empty.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
     
 </faces-config>
